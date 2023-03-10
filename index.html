@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 2: Visualization Critiques</title>
+
+  <meta name = "author" content = "Ysabelle Ho">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <div class="mainmenu">
+        <h1>Visualisation Critique</h1>
+        <h2>02.526 Interactive Data Viz: Assignment 2</h2>
+        <h3>Done by: Ysabelle Ho (1007360) </h3>
+        <table id="nav">
+          <tr>
+          <th><a href="#Eg1" class="w3-bar-item w3-button">Example 1</a> </th>
+          <th><a href="#Eg2" class="w3-bar-item w3-button">Example 2</a></th>
+          </tr> 
+        </table>
+
+  </div>
+  <div class="example" id = "Eg1"> 
+      <h2> Example 1: Visualization of Environmental Data 
+      </h2>
+      <img src="https://i0.wp.com/research.csiro.au/ei/wp-content/uploads/sites/209/2018/01/image2018-1-11_17-26-11.png?resize=617%2C512&ssl=1"
+      style="width:1600px;height:1200px">
+      <p><a href = "https://research.csiro.au/ei/tools-and-services/data-visualisation-analytics/metadata-data-analytics/">Source: CSIRO Website</a>
+        <h3>Background (What) </h3>
+        <p> This visualisation is done by Commonwealth Scientific and Industrial Research Organisation (CSIRO), an Australian Government agency responsible for scientific research, using data from the New South Wales Office of Environment and Heritage. </p>
+        
+        <h3>Aim (Why) </h3>
+        <p> CSIRO's overarching goal was to make sense of large volumes of data, Summarize the available dataset by themes (colour) and quantity (size) at a glance. </p>
+        <p> The existing diagram is thus an example of exploratory analysis, where information is consumed. No outliers/clusters are identified. </p>
+        
+        <h3>Critique on idiom (How) </h3>
+        <h4>Areas for improvement: </h4>
+        <ul>
+        <li> <strong>Colour:</strong> not clear what theme each colour represents</li>
+        <li> <strong>Colour variation:</strong> not clear what colour intensity represents as they can be of the same size. </li>
+        <li> <strong>Magnitude:</strong> Radial differences between data categories are difficult </li>
+        <li> <strong>Chartjunk:</strong> words that do not lend an understanding. Eg. “Soil” appears multiple times but readers are not privy to what exactly the viz is referring to. Some words are cut off and not conclusive </li>
+        </ul>
+        <h4> Suggestions: </h4>
+        <ul>
+        <li><strong>Grouping:</strong> Group those of the same topic in the same area / plot each category on its own </li>
+        <li>Include a <strong>legend</strong> for the colour scheme </li>
+        <li><strong>Magnitude:</strong> Represent the data using rectangles instead of circles for greater comparability. This could be in the form a simple bar chart or nested treemapping. Labels could also be included to indicate the size. This could provide greater space for all the words to be displayed</li>
+        <li><strong>Salience:</strong> Provide a popout effect for the top few results to draw readers' attention. This enhances the current effect</li>
+        </ul>
+        
+      
+      
+      </div>
+  <div class = "example" id = "Eg2">
+    <h2> Example 2: Visualization of pedestrian activity across location and time in Melbourne
+    </h2>
+    <img src="https://morphocode.com/wp-content/uploads/2018/05/morphocode-melbourne-pedestrian-count-ridgeline-plot-1295x800.png">
+    <p><a href = "https://morphocode.com/location-time-urban-data-visualization/">Source: Morphocode</a>
+
+<h3>Background (What) </h3>
+<p> This visualization is a static image and is part of a collection of other visualisations to visualize pedestrian activity in multiple locations across different temporal primitives. The temporal primitive concepts illustrated by this study are 1) time point 2) time interval and 3) time span. Time runs from left to right, and each row represents a single location. </p>
+<h3> Aim (Why) </h3>
+<p> To compare how pedestrian volume changes across multiple locations throughout an entire week </p>
+<h3> Critique on idiom (How) </h3>
+<h4> Strengths of the visualisation: </h4>
+<p> This visualisation provides readers with a birds’ eye view of the traffic across different areas and across all 7 days a week. </p>
+<ul>
+<li> One colour is used throughout the visualization, which looks clean and without clutter </li>
+<li>The shaded areas give a visual cue to the reader regarding the pedestrian volume from the baseline of each location </li>
+</ul>
+<h4> Areas of improvement: </h4>
+<p>  Since the aim of the viz is for comparability, the areas of improvement largely lie in how to locate make data more comparable across location and time </p>
+<ul>
+<li> Position/order of each location does not follow an obvious order, hence users will have to scan through the entire list to locate the location of interest </li>
+<li> No Y Axis: unable to tell the actual magnitude. As we learnt from Weber-Fechner’s Law, the scale matters as the human eye will be more sensitive to changes of a smaller baseline weight/stimuli than a bigger baseline. This can lead to poor estimates of the actual magnitude. </li>
+<li> <img src ="/.morphcode.png" >
+<strong>Comparability/Discriminability is challenged:</strong> a)  Difficult to distinguish/separate each location from the other and b) some instances of overlap hide other data completely and c) difficult to compare across the days </li>
+</ul>
+
+<h4> Suggestions: </h4>
+
+<ul>
+  <li><strong>Interactivity</strong>: As this dataset is more complex, interactivity can help users better process the information in the visualisation as they can go up and down the ladder of abstraction easily.  Some suggestions include: </li>
+	<ul> 
+	  <li> Enabling users to hover above a point on the line to see the corresponding number value. This helps users to have a better grasp of the relative magnitude (basic comparability) and absolute magnitude (so we do not fall prey to Weber-Fechner’s law) </li>
+    <li> Enabling sort/filter options based on location/time. Eg. sort by chronological order or by magnitude on a particular day </li>
+  </ul>
+  <li> <strong>Insert a guiding line for each day:</strong> Segmenting the days will help users to better distinguish between the different days in a week (cyclic time data) </li>
+  <li> Append a <strong>supplementary geospatial map</strong> to visualize the above data based on location. This can help users to understand the traffic flow from one area to another across time to understand how crowds are dispersed </li>
+</ul>
+  </div>
+
+
+  
+
+
+</body>
+
+
+</html>
+          
