@@ -1,9 +1,13 @@
+head {
+    text-align: center;
+}
+
 .mainmenu {
     box-sizing: border-box;
     overflow: auto;
     padding: 18px 50px;
     position: relative;
-    width: 50%;
+    width: 100%;
     z-index: 999;
     text-align: middle;
     margin: auto;
@@ -13,7 +17,7 @@
 #nav th {
     background: rgb(250, 246, 246);
     font-family: 'Lato', sans-serif;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 100;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -21,39 +25,35 @@
     border-style: groove;
     position: middle;
   }
-
 body {
     background-color: rgb(226, 243, 238);
-    font-family: Garamond;
-    text-align: left;
-    padding: 100px;
-    width: 70%
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 25px;
     vertical-align: left;
-    font-size: 40px;
-    line-height: 1.5;
+    width: 50%;
+
+    font-size: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2;
     margin: auto;
     text-align: justify;
     text-align-last: left;
+
 }
 
 h1{
     font-size: 80px;
-    padding-top: 100p;
-    font-family: georgia;
-    position: relative;
+    line-height: 1.5;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
-h3{
-    color: black;
-    font-size: 40px ;
-}
 
 h4{
     text-decoration: underline;
     color: rgb(76, 92, 30);
-    font-weight: normal;
-    font-size: 35px;
+    font-size: 70px;
     margin-bottom:0;
 }
 
@@ -61,12 +61,11 @@ li{
     margin-top: 0;
 }
 
-.img {
+img {
     display:block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
-    padding: 30px 20px
+    width: 90%;
+    padding: 30px 20px;
   }
-
 
