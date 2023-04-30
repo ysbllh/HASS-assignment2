@@ -7,7 +7,6 @@ head {
     overflow: auto;
     padding: 18px 50px;
     position: relative;
-    width: 100%;
     z-index: 999;
     text-align: middle;
     margin: auto;
@@ -17,7 +16,7 @@ head {
 #nav th {
     background: rgb(250, 246, 246);
     font-family: 'Lato', sans-serif;
-    font-size: 40px;
+    font-size: 12px;
     font-weight: 100;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -25,6 +24,7 @@ head {
     border-style: groove;
     position: middle;
   }
+
 body {
     background-color: rgb(226, 243, 238);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -32,10 +32,10 @@ body {
     vertical-align: left;
     width: 70%;
 
-    font-size: 60px;
+    font-size: 16px;
     margin-left: auto;
     margin-right: auto;
-    line-height: 2;
+    line-height: 1.5;
     margin: auto;
     text-align: justify;
     text-align-last: left;
@@ -43,8 +43,8 @@ body {
 }
 
 h1{
-    font-size: 80px;
-    line-height: 1.5;
+    font-size: 25px;
+    line-height:1.5;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -53,7 +53,7 @@ h1{
 h4{
     text-decoration: underline;
     color: rgb(76, 92, 30);
-    font-size: 70px;
+    font-size: 16px;
     margin-bottom:0;
 }
 
@@ -69,3 +69,15 @@ img {
     padding: 30px 20px;
   }
 
+
+  #Eg1, #Eg2 {
+    background-color: white;
+    padding: 20px;
+  }
+  
+
+  h5{
+    font-size: 15px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
