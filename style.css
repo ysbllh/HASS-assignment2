@@ -5,7 +5,7 @@ head {
 .mainmenu {
     box-sizing: border-box;
     overflow: auto;
-    padding: 18px 50px;
+    padding: 18px;
     position: relative;
     z-index: 999;
     text-align: middle;
